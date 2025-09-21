@@ -1,7 +1,7 @@
 # 🎬 Movie Recommender System
 
 A **Content-Based Movie Recommendation System** that suggests similar
-movies based on user input.\
+movies based on user input.
 This project uses **natural language processing (NLP)** techniques to
 compute similarity between movies, combined with a **Streamlit web app**
 for an interactive interface.
@@ -24,9 +24,9 @@ for an interactive interface.
 
 ## 🚀 Features
 
--   Recommends top **5 similar movies** for any selected title.\
--   Displays **movie posters** using the TMDB API.\
--   Built with **Python, NLP, and Streamlit**.\
+-   Recommends top **5 similar movies** for any selected title.
+-   Displays **movie posters** using the TMDB API.
+-   Built with **Python, NLP, and Streamlit**.
 -   Clean and interactive **web-based interface**.
 
 ------------------------------------------------------------------------
@@ -67,19 +67,19 @@ project folder.
 This system uses a **Content-Based Filtering** approach:
 
 1.  **Data Preprocessing**
-    -   Merged `tmdb_5000_movies.csv` and `tmdb_5000_credits.csv`.\
+    -   Merged `tmdb_5000_movies.csv` and `tmdb_5000_credits.csv`.
     -   Selected relevant features: *title, overview, genres, cast,
-        crew, keywords*.\
+        crew, keywords*.
     -   Cleaned & normalized text (stemming, removing duplicates).
 2.  **Feature Engineering**
     -   Constructed a **"tags" feature** by combining all textual
-        metadata.\
+        metadata.
     -   Converted tags into numerical vectors using **CountVectorizer**.
 3.  **Similarity Computation**
-    -   Calculated **cosine similarity** between movie vectors.\
+    -   Calculated **cosine similarity** between movie vectors.
     -   Stored similarity matrix in `similarity.pkl`.
 4.  **Recommendation Function**
-    -   For a given movie, retrieve top 5 most similar titles.\
+    -   For a given movie, retrieve top 5 most similar titles.
     -   Fetch corresponding **posters** from the TMDB API.
 
 ------------------------------------------------------------------------
@@ -94,8 +94,8 @@ Run the Jupyter Notebook to process data and save serialized objects:
 jupyter notebook Movie-Recommender-System.ipynb
 ```
 
-This will generate:\
-- `movies.pkl`\
+This will generate:
+- `movies.pkl`
 - `similarity.pkl`
 
 ### 2. Run the Streamlit app
@@ -110,6 +110,6 @@ Open the provided URL (usually `http://localhost:8501`) in your browser.
 
 ## 🛠️ Future Improvements
 
--   Add **hybrid recommendation** (content + collaborative).\
--   Optimize with **TF-IDF** or **word embeddings**.\
+-   Add **hybrid recommendation** (content + collaborative).
+-   Optimize with **TF-IDF** or **word embeddings**.
 -   Improve UI with filtering & search.
