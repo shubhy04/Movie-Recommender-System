@@ -108,32 +108,8 @@ Open the provided URL (usually `http://localhost:8501`) in your browser.
 
 ------------------------------------------------------------------------
 
-## 📸 Demo
-
-Example recommendation for **Avatar**:
-
-➡️ Similar movies: *John Carter, Guardians of the Galaxy, Star Trek,
-Avatar: The Way of Water, Prometheus*\
-(with posters displayed in the app)
-
-------------------------------------------------------------------------
-
 ## 🛠️ Future Improvements
 
 -   Add **hybrid recommendation** (content + collaborative).\
 -   Optimize with **TF-IDF** or **word embeddings**.\
--   Deploy on **Heroku / Streamlit Cloud**.\
 -   Improve UI with filtering & search.
-
-------------------------------------------------------------------------
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first
-to discuss what you would like to improve.
-
-------------------------------------------------------------------------
-
-## 📜 License
-
-This project is licensed under the MIT License.
